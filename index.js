@@ -42,6 +42,14 @@ const produtos = [
     {nome: 'Sapatos', valor: 65}
 ]
 
-for (const nomes in produtos) {
-    console.log()
+for (let nomes of produtos) {
+    console.log(nomes.nome)
 }
+
+soma = 0
+
+for (let valores of produtos) {
+    soma+=valores.valor   
+}
+
+console.log (soma)
